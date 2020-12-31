@@ -1,4 +1,9 @@
 # Horoscope App To Do
-[x] Twinkle music when button is clicked
 
+## JavaScript
+[x] Twinkle music when button is clicked
+[x] Alert if button is pushed without user input
+
+## CSS
 []Make responsive
+    -[]button and input field too small on mobile

@@ -1,10 +1,4 @@
-// HOROSCOPE WEBPAGE //
-
-/* TODO
-[x]Accept user input as month and day (month and day need +1 because JS uses 0 index)
-[x]Based on date range output horoscope (if/else)
-[x]Input validation to have to be a number (drop down menu?)
-*/
+// DISPLAY HOROSCOPES //
 
 let horoscopeArr = ["This week, it’d probably be good to keep away from any bodies of water — oceans, rivers, lakes, pools, your bathtub. I just wouldn’t risk it.", //Aries
                 "You’re about to lose your marbles, but you should just let it happen. Everybody needs to go a little crazy every once in a while.", // Taurus
@@ -24,6 +18,7 @@ function getHoro() {
     date = new Date(document.getElementById('dateInput').value)
     day = (date.getDate() +1)
     month = (date.getMonth() +1)
+    
     //Aries
     if ((month === 3 && day >= 21) || (month === 4 && day <= 19)) {
         document.getElementById('horo').innerHTML = horoscopeArr[0]
@@ -72,15 +67,20 @@ function getHoro() {
         document.getElementById('horo').innerHTML = horoscopeArr[11]
     }
     else {
-        console.log("You done messed up, A-aron")
+        alert("You done messed up, A-aron. Do you wanna know your horoscope or what? PUT IN YO GOT DANG BIRTHDAY TO SEE WHAT THE FREAKING FUTURE HOLDS")
+        console.log(typeof date)
+        console.log(date)
     }
 }
 
-//Play sound on click//
-
-
+//Play chime sound on click//
 
 function playChimes(){
+    date = document.getElementById('dateInput').value
     const chimes = new Audio("Chimes.mp3")
-    chimes.play()
+    if (!date){
+        return
+    } else {
+        chimes.play()
+    }
 }
