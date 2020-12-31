@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horoscope</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <section class="birthday">
+        <label class="bdayLabel" for="dateInput">When were you born?</label>
+        <input class="dateBox" type="date" id="dateInput">
+        <button class="bubbly-button" onclick="getHoro(); playChimes()">Click here to discover how your stars align today</button>
+    </section>
+
+    <section id="horo"></section>
+
+    
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
