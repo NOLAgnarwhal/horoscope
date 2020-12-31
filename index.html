@@ -11,12 +11,14 @@
 <body>
     
     <section class="birthday">
-        <label class="bdayLabel" for="dateInput">When were you born?</label>
+        <label id="test" class="bdayLabel" for="dateInput">When were you born?</label>
         <input class="dateBox" type="date" id="dateInput">
-        <button class="bubbly-button" onclick="getHoro(); playChimes()">Click here to discover how your stars align today</button>
+        <button class="bubbly-button" onclick="getHoro(); playChimes(); textZoom()">Click here to discover how your stars align today</button>
     </section>
 
-    <section id="horo"></section>
+    <section class="horoContainer">
+        <p id="horo"></p>
+    </section>
 
     
 
