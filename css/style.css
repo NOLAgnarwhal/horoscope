@@ -2,11 +2,11 @@
 
 
 body{
-    height: 100vh; 
+    height: 160vh; 
     background-image: url('/img/star-background.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: auto 100%;
     color: white;
     font-family: 'Dancing Script', cursive;
     font-size: 64%;
@@ -47,18 +47,13 @@ body{
 
 }
 
-.horoContainer {
+#horo {
     text-align: center;
     font-size: 6em;
     font-weight: 700;
     margin: 10px;
     padding: 5px;
-    line-height: 1.25;
-    animation: pop 2s linear alternate;
-}
-
-#horo {
-
+    line-height: 1;
 }
 
 /* @keyframes pop {
