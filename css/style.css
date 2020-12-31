@@ -1,3 +1,7 @@
+/* TODO 
+[]iPhone Button color and text color
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Open+Sans&display=swap');
 
 
@@ -40,6 +44,8 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: .8rem;
     font-weight: 400;
+    background: white;
+    
 
 }
 
